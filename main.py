@@ -67,7 +67,7 @@ if st.button("로그인"):
 
 
   
-
+"""
 #세특 gpt 본격적으로 사용하기 - langchain 이용
 def generate_seteuk() :
   ~~~~ 랭체인 챗지피티 작동 ~~~~
@@ -84,6 +84,8 @@ def freetrial():
     
     generate_seteuk()
     #csv에서 number -1
+
+"""
 
 
 
