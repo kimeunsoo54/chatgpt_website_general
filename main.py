@@ -53,7 +53,7 @@ page_names_to_funcs[page_name]()
 
 
 if st.button("회원가입"):
-    st.page_link("signup_page.py")
+    st.page_link("https://github.com/kimeunsoo54/yakdaeman_chatgpt/blob/main/signup_page.py")
 
         #csv 파일에 이미 있는 사람이면 재가입 못하도록 접근 막아야 한다 (학생, 학부모 정보로 판단)
         #csv 파일에 명단 추가 (사용 횟수를 세기 위한 숫자 3도 같이 입력)
