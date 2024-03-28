@@ -7,21 +7,7 @@ import time
 #st.markdown(html, unsafe_allow_html=True)
 
 #페이지 분리 (같은 repository 내 다른 파일을 생성하고 st.page_link로 연결)
-
-
-
 # 따로 csv DB를 만들자
-  
-
-
-  
-
-
-def login():
-  id = st.text_input("아이디")
-  st.write(id)
-  password = st.text_input("비밀번호", type="password")
-  st.write(len(password), "글자입니다")
 
   
 
@@ -44,10 +30,13 @@ if st.button("회원가입"):
         name_parent = st.text_input("학부모님 성함을 입력해주세요", key=3)
         phone_parent = st.text_input("학부모님 전화번호를 입력해주세요 (띄어쓰기, 하이픈(-) 제외하고 숫자만)", key=4)
         id = st.text_input("아이디를 입력해주세요", key=5)
-        password = st.text_input("비밀번호를 입력해주세요", key=6, type="password")
-        password_check = st.text_input("비밀번호를 한 번 더 입력해주세요", key=7)
+        password = st.text_input("비밀번호를 입력해주세요. 정확히 입력했는지 반드시 확인 바랍니다.", key=6, type="password")
 
         submit = st.form_submit_button("작성 완료")
+
+        #csv 파일에 이미 있는 사람이면 재가입 못하도록 접근 막아야 한다 (학생, 학부모 정보로 판단)
+        #csv 파일에 명단 추가 (사용 횟수를 세기 위한 숫자 3도 같이 입력)
+        #로그인 페이지로 이동
 
 
 if st.button("로그인"):
@@ -60,7 +49,27 @@ if st.button("로그인"):
 
 
   
-  
+
+#세특 gpt 본격적으로 사용하기 - langchain 이용
+def generate_seteuk() :
+  ~~~~ 랭체인 챗지피티 작동 ~~~~
+
+
+
+
+def freetrial():
+  while True:
+    if csv에서 남은 횟수 == 0:
+      #에러띄우기 "무료 이용 횟수를 초과하였습니다. 3초 후 종료됩니다.")
+      time.sleep(3)
+      break
+    
+    generate_seteuk()
+    #csv에서 number -1
+
+
+
+
   
   
 
