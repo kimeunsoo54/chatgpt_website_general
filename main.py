@@ -16,14 +16,14 @@ import time
 
 
 
-'''
+"""
 세특 gpt 본격적으로 사용하기 - langchain 이용
 def generate_seteuk() :
   ~~~~ 랭체인 챗지피티 작동 ~~~~
-'''
 
 
-'''
+
+
 def freetrial():
   while True:
     if csv에서 남은 횟수 == 0:
@@ -33,7 +33,7 @@ def freetrial():
     
     generate_seteuk()
     #csv에서 number -1
-'''
+"""
     
   
   
@@ -51,14 +51,14 @@ def signup():
   
 
   #csv 파일에 이미 있는 사람이면 재가입 못하도록 접근 막아야 한다 (학생, 학부모 정보로 판단)
-  '''
+  """
   if password == password_check:
     #csv 파일에 명단 추가 (사용 횟수를 세기 위한 숫자 3도 같이 입력)
     #로그인 페이지로 이동
   else:
     print("비밀번호가 일치하지 않습니다")
     def signup()
-  '''
+  """
 
 
 def login():
@@ -73,10 +73,10 @@ def login():
 
 
 
-'''
+"""
 def logout():
   st.page_link("signup, login 화면으로 이동")
-'''
+"""
 
 
 
