@@ -54,8 +54,8 @@ def login():
 
 
 
-st.button("회원가입", on_click=None)
-st.button("로그인", on_click=None)
+st.button("회원가입", key = 1, on_click=None)
+st.button("로그인", key = 2, on_click=None)
 
 if st.button("회원가입"):
     signup()
