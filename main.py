@@ -1,5 +1,6 @@
 import streamlit as st
 import time
+import os
 
 
 #홈페이지 꾸미기
@@ -9,7 +10,9 @@ import time
 #페이지 분리 (같은 repository 내 다른 파일을 생성하고 st.page_link로 연결)
 # 따로 csv DB를 만들자
 
+os.mkdir("main.py/pages")
   
+
 
 def signup():
     with st.form("form1", clear_on_submit = True):
