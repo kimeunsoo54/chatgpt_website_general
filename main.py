@@ -25,7 +25,25 @@ def signup():
 
 
 
+def login():
+    with st.form("form1", clear_on_submit = True):
+        id = st.text_input("아이디")
+        password = st.text_input("비밀번호", type="password")
 
+        submit = st.form_submit_button("로그인")
+
+
+
+
+page_names_to_funcs = {
+    "회원가입":signup,
+    "로그인": login
+}
+
+
+
+page_name = st.sidebar.selectbox("회원가입, 로그인 중 하나를 선택하세요", page_names_to_funcs.keys())
+page_names_to_funcs[page_name]()
 
 
 
@@ -43,11 +61,8 @@ if st.button("회원가입"):
 
 
 if st.button("로그인"):
-    with st.form("form1", clear_on_submit = True):
-        id = st.text_input("아이디")
-        password = st.text_input("비밀번호", type="password")
-
-        submit = st.form_submit_button("로그인")
+    login()
+    
 
 
 
