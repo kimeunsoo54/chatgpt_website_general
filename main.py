@@ -31,6 +31,11 @@ def signup():
   id = st.text_input("아이디를 입력해주세요")
   password = st.text_input("비밀번호를 입력해주세요")
   password_check = st.text_input("비밀번호를 한 번 더 입력해주세요")
+
+
+  if st.button("완료"):
+      if password == password_check:
+          st.write("done")
   
 
 
@@ -54,8 +59,6 @@ def login():
 
 
 
-st.button("회원가입", key = 1, on_click=None)
-st.button("로그인", key = 2, on_click=None)
 
 if st.button("회원가입"):
     signup()
