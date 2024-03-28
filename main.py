@@ -12,7 +12,7 @@ import os
   
 
 st.set_page_config(
-    page_title = "회원가입",
+    page_title = "signup_page",
     page_icon = "👋"
 )
 
