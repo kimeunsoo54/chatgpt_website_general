@@ -24,13 +24,13 @@ import time
 
 
 def signup():
-  name_student = st.text_input("학생 성함을 입력해주세요")
-  phone_student = st.text_input("학생 전화번호를 입력해주세요 (띄어쓰기, 하이픈(-) 제외하고 숫자만)")
-  name_parent = st.text_input("학부모님 성함을 입력해주세요")
-  phone_parent = st.text_input("학부모님 전화번호를 입력해주세요 (띄어쓰기, 하이픈(-) 제외하고 숫자만)")
-  id = st.text_input("아이디를 입력해주세요")
-  password = st.text_input("비밀번호를 입력해주세요")
-  password_check = st.text_input("비밀번호를 한 번 더 입력해주세요")
+  name_student = st.text_input("학생 성함을 입력해주세요", key=1)
+  phone_student = st.text_input("학생 전화번호를 입력해주세요 (띄어쓰기, 하이픈(-) 제외하고 숫자만)", key=2)
+  name_parent = st.text_input("학부모님 성함을 입력해주세요", key=3)
+  phone_parent = st.text_input("학부모님 전화번호를 입력해주세요 (띄어쓰기, 하이픈(-) 제외하고 숫자만)", key=4)
+  id = st.text_input("아이디를 입력해주세요", key=5)
+  password = st.text_input("비밀번호를 입력해주세요", key=6)
+  password_check = st.text_input("비밀번호를 한 번 더 입력해주세요", key=7)
 
 
   if st.button("완료"):
