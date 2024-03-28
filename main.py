@@ -11,6 +11,17 @@ import time
 
   
 
+def signup():
+    with st.form("form1", clear_on_submit = True):
+        name_student = st.text_input("학생 성함을 입력해주세요", key=1)
+        phone_student = st.text_input("학생 전화번호를 입력해주세요 (띄어쓰기, 하이픈(-) 제외하고 숫자만)", key=2)
+        name_parent = st.text_input("학부모님 성함을 입력해주세요", key=3)
+        phone_parent = st.text_input("학부모님 전화번호를 입력해주세요 (띄어쓰기, 하이픈(-) 제외하고 숫자만)", key=4)
+        id = st.text_input("아이디를 입력해주세요", key=5)
+        password = st.text_input("비밀번호를 입력해주세요. 정확히 입력했는지 반드시 확인 바랍니다.", key=6, type="password")
+
+        submit = st.form_submit_button("작성 완료")
+
 
 
 
@@ -24,15 +35,7 @@ import time
 
 
 if st.button("회원가입"):
-    with st.form("form1", clear_on_submit = True):
-        name_student = st.text_input("학생 성함을 입력해주세요", key=1)
-        phone_student = st.text_input("학생 전화번호를 입력해주세요 (띄어쓰기, 하이픈(-) 제외하고 숫자만)", key=2)
-        name_parent = st.text_input("학부모님 성함을 입력해주세요", key=3)
-        phone_parent = st.text_input("학부모님 전화번호를 입력해주세요 (띄어쓰기, 하이픈(-) 제외하고 숫자만)", key=4)
-        id = st.text_input("아이디를 입력해주세요", key=5)
-        password = st.text_input("비밀번호를 입력해주세요. 정확히 입력했는지 반드시 확인 바랍니다.", key=6, type="password")
-
-        submit = st.form_submit_button("작성 완료")
+    signup()
 
         #csv 파일에 이미 있는 사람이면 재가입 못하도록 접근 막아야 한다 (학생, 학부모 정보로 판단)
         #csv 파일에 명단 추가 (사용 횟수를 세기 위한 숫자 3도 같이 입력)
