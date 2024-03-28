@@ -9,8 +9,6 @@ import os
 
 #페이지 분리 (같은 repository 내 다른 파일을 생성하고 st.page_link로 연결)
 # 따로 csv DB를 만들자
-
-os.makedirs("main/main.py/pages")
   
 
 
