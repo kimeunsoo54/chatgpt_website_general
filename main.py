@@ -54,11 +54,14 @@ def login():
 
 
 
-button_signup = st.button('회원가입', on_click=None)
-button_login = st.button('로그인', on_click=None)
+st.button("회원가입", on_click=None)
+st.button("로그인", on_click=None)
 
-button_signup.on_click(signup)
-button_login.on_click(login)
+if st.button("회원가입"):
+    signup()
+
+if st.button("로그인"):
+    login()
 
 
 
