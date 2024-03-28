@@ -1,4 +1,10 @@
 import streamlit as st
+
+st.set_page_config(
+    page_title = "signup_page",
+    page_icon = "👋"
+)
+
 def signup():
     with st.form("form1", clear_on_submit = True):
         name_student = st.text_input("학생 성함을 입력해주세요", key=1)
