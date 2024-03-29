@@ -1,3 +1,5 @@
+import streamlit as st
+
 def login():
     with st.form("form2", clear_on_submit = True):
         id = st.text_input("아이디")
