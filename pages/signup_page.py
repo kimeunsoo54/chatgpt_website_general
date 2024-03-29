@@ -17,6 +17,6 @@ def signup():
     		f = open('member_free.csv', 'a', newline='')
     		wr = csv.writer(f)
     		wr.writerow([name_student, phone_student, id, password, 3])
-
+				f.close()
 
 signup()
