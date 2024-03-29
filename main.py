@@ -12,7 +12,7 @@ from signup_page import signup
   
 
 
-
+"""
 def signup():
     with st.form("form1", clear_on_submit = True):
         name_student = st.text_input("학생 성함을 입력해주세요", key=1)
@@ -24,7 +24,7 @@ def signup():
 
         submit = st.form_submit_button("작성 완료")
 
-
+"""
 
 
 def login():
