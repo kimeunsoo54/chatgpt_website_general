@@ -10,3 +10,6 @@ def signup():
         password = st.text_input("비밀번호를 입력해주세요. 정확히 입력했는지 반드시 확인 바랍니다.", key=6, type="password")
 
         submit = st.form_submit_button("작성 완료")
+
+
+signup()
