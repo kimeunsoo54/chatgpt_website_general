@@ -59,7 +59,7 @@ page_names_to_funcs[page_name]()
 
 
 if st.button("회원가입"):
-    st.page_link(pages/signup_page.py")
+    st.switch_page("pages/signup_page.py")
 
 
                  
