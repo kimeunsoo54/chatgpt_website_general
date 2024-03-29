@@ -15,7 +15,7 @@ def signup():
 		submit = st.form_submit_button("작성 완료")
 
 		if submit == True:
-			f = open('member_free.csv', 'a', newline='')
+			f = open('pages/member_free.csv', 'a', newline='')
 			wr = csv.writer(f)
 			wr.writerow([name_student, phone_student, id, password, 3])
 			f.close()
