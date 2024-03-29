@@ -1,6 +1,5 @@
 import streamlit as st
 import time
-from signup_page import signup
 
 
 #홈페이지 꾸미기
