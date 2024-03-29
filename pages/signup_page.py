@@ -18,6 +18,7 @@ def signup():
 			f = open("C:\yakdaeman_chatgpt\member_free.CSV", 'a', newline='')
 			wr = csv.writer(f)
 			wr.writerow([name_student, phone_student, id, password, 3])
+			f.savefile()
 			f.close()
 			st.switch_page("pages/login_page.py")
 
