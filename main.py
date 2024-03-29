@@ -35,7 +35,7 @@ def login():
 
 
 
-
+'''
 page_names_to_funcs = {
     "회원가입":signup,
     "로그인": login
@@ -45,7 +45,7 @@ page_names_to_funcs = {
 
 page_name = st.sidebar.selectbox("회원가입, 로그인 중 하나를 선택하세요", page_names_to_funcs.keys())
 page_names_to_funcs[page_name]()
-
+'''
 
 
 
