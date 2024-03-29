@@ -11,7 +11,7 @@ import time
   
 
 
-
+"""
 def signup():
     with st.form("form1", clear_on_submit = True):
         name_student = st.text_input("학생 성함을 입력해주세요", key=1)
@@ -33,7 +33,7 @@ def login():
 
         submit = st.form_submit_button("로그인")
 
-
+"""
 
 '''
 page_names_to_funcs = {
