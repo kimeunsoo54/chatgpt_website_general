@@ -13,10 +13,11 @@ def signup():
         password = st.text_input("비밀번호를 입력해주세요. 정확히 입력했는지 반드시 확인 바랍니다.", key=6, type="password")
 
         submit = st.form_submit_button("작성 완료")
-		
-    	f = open('member_free.csv', 'a', newline='')
-    	wr = csv.writer(f)
-    	wr.writerow([name_student, phone_student, id, password, 3])
-	f.close()
+
+	if submit == True:
+            f = open('member_free.csv', 'a', newline='')
+            wr = csv.writer(f)
+            wr.writerow([name_student, phone_student, id, password, 3])
+		f.close()
 
 signup()
