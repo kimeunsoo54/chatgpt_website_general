@@ -63,7 +63,7 @@ if st.button("회원가입"):
 
 
 if st.button("로그인"):
-    login()
+    st.switch_page("pages/login_page.py")
     
 
 
