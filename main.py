@@ -11,10 +11,6 @@ import os
 # 따로 csv DB를 만들자
   
 
-st.set_page_config(
-    page_title = "signup_page",
-    page_icon = "👋"
-)
 
 
 def signup():
