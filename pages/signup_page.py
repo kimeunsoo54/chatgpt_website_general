@@ -15,7 +15,7 @@ def signup():
 		submit = st.form_submit_button("작성 완료")
 
 		if submit == True:
-			f = open("yakdaeman_chatgpt/member_free.csv", 'w', newline='')
+			f = open("나의 iPad/다운로드/member_free.csv", 'a', newline='')
 			wr = csv.writer(f)
 			wr.writerow([name_student, phone_student, id, password, 3])
 			f.savefile()
