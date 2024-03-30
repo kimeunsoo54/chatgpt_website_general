@@ -27,6 +27,11 @@ def signup():
 	
 	with st.form("form1", clear_on_submit = False):
 		
+	 if 'id' not in st.session_state:
+		 st.session_state['id']=''
+
+	 if 'pw' not in st.session_state:
+		 st.session_state['pw']=''
 
 		
 		name_student = st.text_input("학생 성함을 입력해주세요", key=1)
