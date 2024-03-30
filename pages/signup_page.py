@@ -23,19 +23,14 @@ def signup():
 		submit = st.form_submit_button("작성 완료")
 
 		if submit == True:
-			#f = open("pages/files/member_free.CSV", 'a', newline='')
 			f_ = open("pages/files/member_free.CSV", 'r')
 			read = csv.reader(f_)
 			
 			for a in read:
 				if a[0] == name_student:
-					st.switch_page("page/login_page.py")
+					st.switch_page("pages/login_page.py")
 					
 					
 			f.close()
-			#wr = csv.writer(f)
-			#wr.writerow([st.session_state['name_student'], st.session_state['phone_student']])
-			
-			#st.switch_page("pages/login_page.py")
 
 signup()
