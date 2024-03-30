@@ -42,14 +42,18 @@ def signup():
 		id = st.text_input("아이디를 입력해주세요", key=5)
 		password = st.text_input("비밀번호를 입력해주세요. 정확히 입력했는지 반드시 확인 바랍니다.", key=6, type="password")
 
+		f_ = open("pages/files/member_free.CSV", 'r')
+		read = csv.reader(f_)
+		wr = csv.writer(f)
+		wr.writerow([name_student, phone_student, id, password, 3])
+		f.close()
+
 		submit = st.form_submit_button("작성 완료")
 
 		if submit == True:
 			f = open("pages/files/member_free.CSV", 'a', newline='')
 			f_ = open("pages/files/member_free.CSV", 'r')
 			read = csv.reader(f_)
-			for row in read:
-				st.write(row)
 			wr = csv.writer(f)
 			wr.writerow([name_student, phone_student, id, password, 3])
 			f.close()
