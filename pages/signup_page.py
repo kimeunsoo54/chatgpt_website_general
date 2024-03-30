@@ -43,7 +43,7 @@ def signup():
 		submit = st.form_submit_button("작성 완료")
 
 		if submit == True:
-			f = open("https://github.com/kimeunsoo54/yakdaeman_chatgpt/blob/cf55e69997aa4e48e381373025d1e581bfe4be9c/pages/files/member_free.CSV", 'a', newline='')
+			f = open("'https://raw.githubusercontent.com/kimeunsoo54/yakdaeman_chatgpt/main/pages/files/member_free.csv'", 'a', newline='')
 			wr = csv.writer(f)
 			wr.writerow([name_student, phone_student, id, password, 3])
 			f.close()
