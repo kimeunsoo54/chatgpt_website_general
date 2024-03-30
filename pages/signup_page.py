@@ -5,12 +5,7 @@ import csv
 
 def signup():
 	
-	if 'name_student' not in st.session_state:
-    		st.session_state['name_student'] = ''
-		
-	if 'phone_student' not in st.session_state:
-    		st.session_state['phone_student'] = ''
-
+	
 	if 'id' not in st.session_state:
 		st.session_state['id']=''
 
@@ -23,6 +18,14 @@ def signup():
 	
 	
 	with st.form("form1", clear_on_submit = False):
+		if 'name_student' not in st.session_state:
+    			st.session_state['name_student'] = ''
+		
+		if 'phone_student' not in st.session_state:
+    			st.session_state['phone_student'] = ''
+
+
+		
 		name_student = st.text_input("학생 성함을 입력해주세요", key=1)
 		if name_student:
 			st.session_state['name_student'] = name_student
