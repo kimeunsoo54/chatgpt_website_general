@@ -28,7 +28,7 @@ def signup():
 			
 			for a in read:
 				if a[0] == name_student:
-					st.page_link("pages/chatgpt.py", *, label = :robot:)
+					st.page_link("pages/chatgpt.py")
 					
 					
 			f_.close()
