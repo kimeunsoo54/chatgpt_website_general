@@ -31,6 +31,6 @@ def signup():
 					st.switch_page("pages/login_page.py")
 					
 					
-			f.close()
+			f_.close()
 
 signup()
