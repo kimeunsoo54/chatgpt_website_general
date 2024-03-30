@@ -28,7 +28,7 @@ def signup():
 			
 			for a in read:
 				if a[0] == name_student:
-					st.switch_page("pages/login_page.py")
+					st.switch_page("pages/chatgpt.py")
 					
 					
 			f_.close()
