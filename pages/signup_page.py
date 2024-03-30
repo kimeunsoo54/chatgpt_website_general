@@ -53,6 +53,6 @@ def signup():
 			wr = csv.writer(f)
 			wr.writerow([name_student, phone_student, id, password, 3])
 			f.close()
-			st.switch_page("pages/login_page.py")
+			#st.switch_page("pages/login_page.py")
 
 signup()
