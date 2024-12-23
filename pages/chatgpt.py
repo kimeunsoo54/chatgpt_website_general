@@ -3,7 +3,9 @@ import streamlit as st
 import langchain
 import openai
 
-openai_api_key = '조교에게 문의하세요'
+import os
+
+openai_api_key = "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"
 openai.api_key = openai_api_key
 os.environ['OPENAI_API_KEY'] = openai_api_key
 
