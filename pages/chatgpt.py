@@ -1,12 +1,7 @@
 import streamlit as st
-import pip
-
-!pip install langchain
-!pip install openai
 
 import langchain
 import openai
-import os
 
 openai_api_key = '조교에게 문의하세요'
 openai.api_key = openai_api_key
