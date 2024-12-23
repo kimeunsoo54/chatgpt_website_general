@@ -1,6 +1,7 @@
 import streamlit as st
 
 import langchain
+import langchain_community
 import openai
 
 import os
